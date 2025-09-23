@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Helping Hands Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Helping Hands Foundation</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Our Mission</a></li>
+                    <li><a href="donate.html">Donate Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="donation-form">
+            <div class="container">
+                <h2>Make a Difference Today</h2>
+                <p>Every contribution, no matter how small, helps us reach more individuals and families in desperate need of food aid. Your generosity directly impacts lives and nourishes hope.</p>
+
+                <form id="donateForm">
+                    <div class="form-group">
+                        <label for="amount">Donation Amount ($)</label>
+                        <input type="number" id="amount" name="amount" min="5" placeholder="e.g., 25" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">Select a method</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bank-transfer">Bank Transfer</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button">Complete Donation</button>
+                </form>
+
+                <div id="thank-you-message" style="display: none;">
+                    <h3>Thank You for Your Generosity!</h3>
+                    <p>Your donation means the world to us and to those we serve. We will send a confirmation to your email shortly.</p>
+                    <p>If you'd like to learn more about our work, please visit our <a href="index.html">mission page</a>.</p>
+                </div>
+
+                <div id="bitcoin-donation-section">
+                    <hr>
+                    <h3>Donate with Bitcoin</h3>
+                    <p>You can also support us by sending a donation directly to our Bitcoin wallet. Please copy the address below and paste it into your wallet app.</p>
+                    <div class="bitcoin-address-box">
+                        <span id="bitcoin-address">3E3e6b9DkzPRJg81Rz74u5JDFzzGrmgKZz</span>
+                        <button id="copy-button">Copy Address</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <a id="whatsapp-button" href="https://wa.me/15715454595?text=I%20would%20like%20to%20make%20a%20donation%20to%20Helping%20Hands%20Foundation." target="_blank">
+        Donate via WhatsApp
+    </a>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Helping Hands Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
